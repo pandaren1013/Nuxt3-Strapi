@@ -1,0 +1,414 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "NorseBold";
+  src: url(../font/Norsebold.otf);
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url(../font/Norse.otf);
+}
+
+@font-face {
+  font-family: "Gibson";
+  src: url(../font/gibson/gibson-regular.otf);
+}
+
+@font-face {
+  font-family: "GibsonBold";
+  src: url(../font/gibson/gibson-bold.otf);
+}
+
+@font-face {
+  font-family: "GibsonSemiBold";
+  src: url(../font/gibson/gibson-semibold.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.text-primary {
+  color: #9f0d08;
+}
+
+/* Begin: Main primary button css */
+
+.primary-button {
+  background-image: url("../image/button.png");
+  background-size: 100% 100%;
+  color: white;
+  position: relative;
+  font-family: Norsebold;
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  background-image: url("../image/button-hover.png");
+  color: black;
+}
+
+.primary-button::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 150%;
+  background-image: url("../image/button_back.png");
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
+}
+
+.primary-button:hover::after {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.primary-button-white {
+  background-image: url("../image/button.png");
+  background-size: 100% 100%;
+  color: white;
+  position: relative;
+  font-family: Norsebold;
+  transition: 0.3s;
+}
+
+.primary-button-white:hover {
+  background-image: url("../image/button-hover.png");
+  color: black;
+}
+
+.primary-button-white::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 150%;
+  background-image: url("../image/button_back_black.png");
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
+}
+
+.primary-button-white:hover::after {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.primary-button-white::placeholder {
+  color: white;
+}
+
+
+/* End: Main primary button css */
+
+#header {
+  font-family: Norsebold;
+}
+
+#banner {
+  font-family: Norsebold !important;
+  font-weight: bold;
+  height: calc(100vh - 1rem);
+}
+
+#banner video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.banner-item-group {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.banner-item {
+  height: 5rem;
+}
+
+/* Begin : Explorer section */
+
+#explorer {
+  background-image: url(../image/section_bac.jpg);
+  background-size: auto;
+}
+
+/* End : Explorer section */
+
+/* Begin : Advertise section */
+
+#advertise {
+  background-image: url(../image/section_4_back.jpg);
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+#advertise::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -3px;
+  background-image: url(../image/line-white.png);
+  background-repeat: no-repeat;
+}
+
+#advertise-left {
+  background-image: url(../image/section_3_item.jpg);
+  background-size: 100% 100%;
+}
+
+#advertise-right {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+/* End : Advertise section */
+
+/* Begin : Advertise section */
+
+#team {
+  background-image: url(../image/section_bac.jpg);  
+  background-repeat: repeat-y;
+  background-size: cover;
+  position: relative;
+}
+
+#team::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -3px;
+  background-image: url(../image/line-black.png);
+  background-repeat: no-repeat;
+}
+
+/* End : Advertise section */
+
+/* Begin: Team section */
+
+/* .photo-wrapper::after {
+  content: "m";
+  background-image: url(../image/photo_wrapper.png);
+  background-size: 100% 100%;
+} */
+
+.photo-wrapper {
+  position: relative;
+}
+
+.photo-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 53%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  width: 114%;
+  height: 114%;
+  background-image: url("../image/photo_wrapper.png");
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
+}
+.image-wrapper_temp {
+  position: relative;
+}
+
+.image-wrapper_temp::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 53%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  width: 115%;
+  height: 115%;
+  background-image: url("../image/photo_wrapper_temp.png");
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
+}
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 53%;
+  top: 53%;
+  transform: translate(-50%, -50%);
+
+  width: 114%;
+  height: 114%;
+  background-image: url("../image/image_wrapper_2.png");
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
+}
+
+/* End: Team section */
+
+/* Begin: Community Section */
+#community {
+  background-image: url(../image/section_bac.jpg);
+  background-size: auto;
+}
+
+#community-left {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+/* End: Community Section */
+
+/* Begin : Sponsor component */
+
+#sponsor {
+  background-color: black;
+  position: relative;
+}
+
+#sponsor::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: -3px;
+  background-image: url(../image/line-white.png);
+  background-repeat: no-repeat;
+}
+
+#sponsor::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: calc(-100% + 10px);
+  left: 0px;
+  background-image: url(../image/line-white.png);
+  background-repeat: no-repeat;
+}
+
+.marquee {
+  --gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* End : Sponsor component */
+
+/* Begin: Swiper component */
+
+#carousel {
+  background-image: url(../image/section_bac.jpg);
+  background-size: auto;
+  position: relative;
+  /* font-family: GibsonBold; */
+}
+
+#carousel::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -3px;
+  background-image: url(../image/line.png);
+  background-repeat: no-repeat;
+}
+
+/* End: Swiper component */
+
+.gibson {
+  font-family: "Gibson";
+}
+
+.gibsonbold {
+  font-family: "GibsonBold";
+}
+
+.gibsonsemibold {
+  font-family: "GibsonSemiBold";
+}
+
+.norse {
+  font-family: "Norse";
+}
+
+.norsebold {
+  font-family: "Norsebold";
+}
+
+/* Begin: Partners component */
+
+#partners {
+  background-image: url(../image/section_bac.jpg);
+  background-size: auto;
+}
+
+
+/* End: Partners component */
+
+/* Begin : Footer component */
+
+#footer {
+  background-color: black;
+}
+
+#footer_logo {
+  top: -50px;
+}
+/* End : Footer component */
+
+.faq_group_border {
+  border-color: #333;
+}
+
+.faq_item_border {
+  border-color: #9f0d08;
+}
